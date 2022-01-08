@@ -1,0 +1,78 @@
+{
+    "productos":
+
+
+
+[ { "id":1, "nombre": "Pack Donuts",
+    "contenido":6, 
+    "precio":600,  
+    "imagen": "./imagenes/donuts.jpg"
+},
+    { 
+    "id":2, 
+    "nombre": "Pack Cakes",
+    "contenido":8, 
+    "precio": 1200, 
+    "imagen": "./imagenes/cakes.jpg"
+},
+    { 
+    "id":3, 
+    "nombre": "Pack Cookies",
+    "contenido":12, 
+    "precio": 1200, 
+    "imagen": "./imagenes/cookies.jpg"
+},
+    { "id":4, 
+    "nombre": "Box Éclairs",
+    "contenido":8, 
+    "precio": 1200, 
+    "imagen": "./imagenes/eclairs.jpg"
+    },
+    { "id":5, 
+    "nombre": "Box Macarons",
+    "contenido":12, 
+    "precio": 1200, 
+    "imagen": "./imagenes/macs.jpg"
+    },
+    { "id":6, 
+     "nombre": "Cheesecake",
+        "contenido":1, 
+        "precio": 1200, 
+        "imagen": "./imagenes/cheesecake.jpg"
+    },
+    { "id":7, 
+        "nombre": "Brownie",
+        "contenido":1, 
+        "precio": 1200, 
+        "imagen": "./imagenes/brownie.jpg"
+    },
+    { "id":8, 
+        "nombre": "Blueberry pie",
+        "contenido":1, 
+        "precio": 1200, 
+        "imagen": "./imagenes/blueberry.jpg"
+    },
+    { "id":9, 
+        "nombre": "Apple pie",
+        "contenido":1, 
+        "precio": 1200, 
+        "imagen": "./imagenes/apple.jpg"
+    },
+    { "id":10,
+    "nombre": "Birthday set",
+    "contenido":1, 
+    "precio": 3500, 
+    "imagen": "./imagenes/birthday.jpg"
+},
+    { "id":11,
+    "nombre": "Christmas set",
+    "contenido":1, 
+    "precio": 3000, 
+    "imagen": "./imagenes/cookies.jpg"},
+    { "id":12,
+    "nombre": "Gift box surprise",
+    "contenido":1, 
+    "precio": 2500, 
+    "imagen": "./imagenes/cakes.jpg"}
+    
+]}

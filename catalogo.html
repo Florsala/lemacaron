@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Le Macaron</title> 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    
+  
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+<body>
+
+  
+<header>
+
+  <div class= "head_logo">
+    <img src="./imagenes/logo_mac.png" alt="logo">
+  </div>
+  
+<nav class="navbar navbar-expand-lg navbar-light  nav5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">HOME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Productos</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="#" >
+            Galeria
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recetas</a>
+        </li>
+      </ul>
+      
+   
+
+
+<div class="two columns u-pull-right">
+  <ul>
+      <li class="submenu">
+        <a href="#"><h4 class="py-3 px-3 4">mi carrito</h4></a>
+        <a href="#"id="cartIcon"><i class="fas fa-shopping-cart"></i></a>
+        
+        <div id="cart" class=" itemsCarrito table-responsive"   >
+          
+          <table id="carrito" class="table">
+            <thead>
+              <tr class="carrito_header">
+                <th scope="col">#</th>
+                <th scope="col">Productos</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+                
+              
+            </tbody>
+          </table>
+
+          <br><br>
+
+          
+          <div class="row mx-6">
+            <div class="col">
+              <h3 class="total">Total:0</h3>
+            </div>
+            <div class="col d-flex justify content-end">
+              <a href="compra.html"><button   class="btn btn-info">comprar</button></a>
+              <a href="" id="vaciar-carrito" class="boton btn btn-info " onClick="vaciarCarrito()">Vaciar Carrito</a>
+            </div>
+          </div>
+
+        </div>
+
+</li>
+
+</nav>
+
+</header>
+     
+    <div class="alert  align-items-center container position-sticky top-0 hide" role="alert">
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16" style="
+     margin-bottom: 5px;">
+        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+      </svg>
+     <span class="spanCart"> Producto añadido al carrito </span>
+    
+    </div>
+
+
+    
+    <!-- catalogo -->  
+          <div id="productos"  class="row row-cols-md-4 g-4 col-sm-3"></div>      
+  
+
+
+ 
+    
+<footer class="footer">
+
+  <div class="row f-cont">
+     <div class="col text-center">
+       
+       <a href="" class="link-foot"><i class=" f-icon fab fa-whatsapp"></i>
+       <h6 class="p-3 fw-bold">+54 (2901) 51911111</h6>
+     </a>
+     </div>
+     <div class="col text-center">
+       <i class=" f-icon fas fa-envelope"></i>
+       <h6 class="p-3 fw-bold">pedidos@lemacaron.com</h6>
+     </div>
+     <div class="col text-center">
+       <i class=" f-icon fas fa-truck"></i>
+       <h6 class="p-3 fw-bold" >free delivery</h6>
+     </div>
+   </div>
+ 
+ 
+ <div class=" container py-2 footer-container" >
+ <div class="row text-start">
+  
+   <div class="footer__text col-6 col-md"> 
+     <h5 class="fw-bold">Le Macaron</h5>
+     <ul class="list-unstyled text-small">
+       <a href="catalogo.html" class="link-foot"><li>Productos</li></a>
+       <a href="#" class="link-foot"><li>Galeria</li></a>
+       <a href="#" class="link-foot"><li>Recetas</li></a>
+     </ul>
+ 
+   </div>
+ 
+   <div class="footer__text col-6 col-md"> 
+     <h5 class="fw-bold">Quienes somos</h5>
+     <ul class="list-unstyled text-small">
+       <li>Servicio de pastelería online</li>
+       <li>Bahia de los renos 2478</li>
+       <li>Ushuaia, Tierra del fuego</li>
+     </ul> 
+ 
+   </div>
+ 
+ 
+   
+ 
+   <div class="footer__text col-6 col-md"> 
+    <div class="input-group mb-3">
+     <input type="text" class="form-control" placeholder="Newsletter" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <button> <span class="input-group-text" id="basic-addon2">@</span></button>
+   </div>
+ 
+ 
+   </div>
+ 
+ </div>
+ 
+ </div>
+ 
+ <div >
+   <ul class=" nav-icons-ul  ">
+     <li class="nav-icons-li">
+       <a class="icons" href="#"><i class="fab fa-instagram"></i></a>
+     </li>
+     <li class="nav-icons-li">
+       <a class="icons" href="#"><i class="fab fa-pinterest"></i></a>
+     </li>
+     <li class="nav-icons-li">
+       <a class="icons" href="#"><i class="fab fa-facebook"></i></a>
+     </li> 
+   </ul>
+ 
+   <div>
+     
+   </div>
+   
+ </div>
+ </footer>
+ 
+ 
+
+   
+
+
+
+
+
+    
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="./main2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>
