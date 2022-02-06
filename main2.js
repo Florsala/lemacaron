@@ -12,6 +12,7 @@ $.ajax({
         <div class= "item__descr card-body">
             <h5 class="item__title card-title">${producto.nombre}</h5>
             <p>contiene ${producto.contenido} unid.</p>
+            <p class="item__stock ">${producto.stock}</p>
             <p class="item__price card-text">$${producto.precio}</p>
             <button id="btn_buy" class= "button btn  btn-lg "  >Agregar </button>
         </div>
@@ -42,11 +43,13 @@ function cargarDatos() {
   let ciudad = document.getElementById("inputCity").value;
   let datos = new Datos(nombre, apellido, email, telefono, direccion, ciudad);
   formDatos(datos);
+  vaciarCarrito();
+  vaciarLocalStorage();
 }
 
 const formDatos = (datos) => {
   $("#formulario").remove();
-  $(".compraFinal").remove()
+  $(".compraFinal").remove();
 
   $("#formSection").append(
     `<div class="formModal">
@@ -68,10 +71,6 @@ const formDatos = (datos) => {
   );
 };
 
-
-
-
-
 const tbody = document.querySelector(".tbody");
 let carrito = [];
 
@@ -88,11 +87,13 @@ function agregarCarrito(e) {
   const itemTitle = item.querySelector(".item__title").textContent;
   const itemPrice = item.querySelector(".item__price").textContent;
   const itemImg = item.querySelector(".item__img").src;
+  const itemStock = item.querySelector(".item__stock").textContent;
   const miCarrito = {
     title: itemTitle,
     precio: itemPrice,
     img: itemImg,
     cantidad: 1,
+    stock: itemStock,
   };
 
   agregarItemCarrito(miCarrito);
@@ -105,7 +106,6 @@ const agregarItemCarrito = (miCarrito) => {
     alert.classList.add("hide");
   }, 2000);
   alert.classList.remove("hide");
-  
 
   const inputItem = $(".select");
 
@@ -146,7 +146,7 @@ function renderCarrito() {
                   <p class="carrito_precio px-3"> ${item.precio}</p>
                 </td>
                 <td>
-                  <input class="select" type="number" min="1" value=${item.cantidad} > 
+                  <input class="select" type="number" min="1" max= "10" value=${item.cantidad} > 
                   <button class=" delete btn btn-danger">x</button>
                 </td>   
       
@@ -165,7 +165,6 @@ function renderCarrito() {
 
 const carritoTotal = () => {
   let total = 0;
-  
 
   const itemTotal = document.querySelector(".total");
 
@@ -193,7 +192,6 @@ const removeItem = (e) => {
   }
   tr.remove();
 
-  
   carritoTotal();
 };
 
@@ -223,53 +221,28 @@ window.onload = function () {
   }
 };
 
-
-
-
 const vaciarCarrito = () => {
-  while(tbody.firstChild) {
+  while (tbody.firstChild) {
     tbody.removeChild(tbody.firstElementChild);
-
-
   }
 
   vaciarLocalStorage();
-    return false;
-
-    
+  return false;
 };
-
 
 function vaciarLocalStorage() {
   localStorage.clear();
-  
-  
 }
 
 
-
-
-$(document).ready(function (){
-
-  $(".submenu #cartIcon").click(function() {
-
+$(document).ready(function () {
+  $(".submenu #cartIcon").click(function () {
     $("#cart").fadeToggle(600);
   });
+});
 
+$(document).ready(function () {
+  $(".quieroBtn").animate({ left: "28rem" }, 3000);
 
-
-
-});  
-
-
-
-$(document).ready(function (){
-
-  $(".quieroBtn").animate({left: '28rem'}, 3000);
-
-  $(".titulo").animate({left: '15rem',
-fontSize:"3rem"}, 1500);
-
-
-})
-
+  $(".titulo").animate({ left: "15rem", fontSize: "3rem" }, 1500);
+});

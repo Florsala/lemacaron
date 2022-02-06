@@ -436,6 +436,9 @@ a{
     object-fit: cover;
 }
 
+.item__stock{
+    display:none;
+}
 #btn_buy{
     background-color: pink;
     color: black;

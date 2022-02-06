@@ -6,73 +6,89 @@
 [ { "id":1, "nombre": "Pack Donuts",
     "contenido":6, 
     "precio":600,  
-    "imagen": "./imagenes/donuts.jpg"
+    "imagen": "./imagenes/donuts.jpg",
+    "stock": 10
 },
     { 
     "id":2, 
     "nombre": "Pack Cakes",
     "contenido":8, 
     "precio": 1200, 
-    "imagen": "./imagenes/cakes.jpg"
+    "imagen": "./imagenes/cakes.jpg",
+    "stock": 6
 },
     { 
     "id":3, 
     "nombre": "Pack Cookies",
     "contenido":12, 
     "precio": 1200, 
-    "imagen": "./imagenes/cookies.jpg"
+    "imagen": "./imagenes/cookies.jpg",
+    "stock": 15
 },
     { "id":4, 
     "nombre": "Box Éclairs",
     "contenido":8, 
     "precio": 1200, 
-    "imagen": "./imagenes/eclairs.jpg"
+    "imagen": "./imagenes/eclairs.jpg",
+    "stock": 10
     },
     { "id":5, 
     "nombre": "Box Macarons",
     "contenido":12, 
     "precio": 1200, 
-    "imagen": "./imagenes/macs.jpg"
+    "imagen": "./imagenes/macs.jpg",
+    "stock": 25
     },
     { "id":6, 
      "nombre": "Cheesecake",
         "contenido":1, 
         "precio": 1200, 
-        "imagen": "./imagenes/cheesecake.jpg"
+        "imagen": "./imagenes/cheesecake.jpg",
+        "stock": 10
     },
     { "id":7, 
         "nombre": "Brownie",
         "contenido":1, 
         "precio": 1200, 
-        "imagen": "./imagenes/brownie.jpg"
+        "imagen": "./imagenes/brownie.jpg",
+        "stock": 10
     },
     { "id":8, 
         "nombre": "Blueberry pie",
         "contenido":1, 
         "precio": 1200, 
-        "imagen": "./imagenes/blueberry.jpg"
+        "imagen": "./imagenes/blueberry.jpg",
+        "stock": 10
     },
     { "id":9, 
         "nombre": "Apple pie",
         "contenido":1, 
         "precio": 1200, 
-        "imagen": "./imagenes/apple.jpg"
+        "imagen": "./imagenes/apple.jpg",
+        "stock": 10
     },
     { "id":10,
     "nombre": "Birthday set",
     "contenido":1, 
     "precio": 3500, 
-    "imagen": "./imagenes/birthday.jpg"
+    "imagen": "./imagenes/birthday.jpg",
+    "stock": 5
 },
     { "id":11,
     "nombre": "Christmas set",
     "contenido":1, 
     "precio": 3000, 
-    "imagen": "./imagenes/cookies.jpg"},
+    "imagen": "./imagenes/cookies.jpg",
+    "stock": 5
+
+},
     { "id":12,
     "nombre": "Gift box surprise",
     "contenido":1, 
     "precio": 2500, 
-    "imagen": "./imagenes/cakes.jpg"}
+    "imagen": "./imagenes/cakes.jpg",
+    "stock": 10
+
+}
     
 ]}
